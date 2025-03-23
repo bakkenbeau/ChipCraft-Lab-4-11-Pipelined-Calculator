@@ -60,8 +60,7 @@
          $reset = *reset;
          
          // Board's switch inputs
-         //$op[2:0] = *ui_in[6:4];
-         $op[2:0] = {$rand1[0:0], 1'b0, $rand2[0:0]}; //0,1,4,5
+         $op[2:0] = *ui_in[6:4];
          $val2[7:0] = {4'b0, *ui_in[3:0]};
          $equals_in = *ui_in[7];
          
